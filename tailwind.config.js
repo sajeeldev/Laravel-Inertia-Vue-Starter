@@ -6,19 +6,14 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
-// tailwind.config.js
-module.exports = {
-    theme: {
-      // ...
+    extend: {
+        fontFamily: {
+            Montserrat: ["Montserrat", 'sans-serif']
+        }
     },
-    plugins: [
-      require('@tailwindcss/forms'),
-      // ...
-    ],
-  }
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
+}
 
